@@ -13,7 +13,7 @@ def test_apply_template_with_multiple_arg():
     assert result == 'a hello in the world'
 
 def test_parsing_arguments():
-    res = parse_arguments(('test', '-t', 'template'))
+    res = parse_arguments(('-t', 'template'))
     assert res.template_name == 'template'
     assert res.template_arguments == ()
 
